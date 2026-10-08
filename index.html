@@ -1,375 +1,402 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
 
-    <meta charset="UTF-8">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    <title>ORIDEV PERÚ | Tecnología y Soluciones Digitales</title>
 
-    <!-- Fuente Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+/* =========================================
+   MENÚ DE NAVEGACIÓN
+========================================= */
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+nav {
+    position: absolute ;
+    top: 0;
+    left: 0;
 
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="style.css">
+    width: 100%;
+    height: 75px;
 
-</head>
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 0 7%;
 
-<body>
+    background: rgba(17, 17, 17, 0.95);
+    background-image: url("img/fcabecera.jpg");
+    background-size: cover;
 
+    border-bottom: 1px solid #333333;
 
-    <!-- =========================
-         MENÚ
-    ========================== -->
+    z-index: 1000;
+    }
+        /* Zona central donde irá la imagen */
+.logo {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 75px;
+}
 
-    <nav>
+.logo img {
+    width: 120px;
+    height: 75px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
 
-        <div class="logo">
-            ORIDEV
-        </div>
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
 
-        <ul class="menu">
+.menu a {
+    font-size: 13px;
+    font-weight: 500;
 
-            <li>
-                <a href="#inicio">Inicio</a>
-            </li>
+    color: #666666;
 
-            <li>
-                <a href="#nosotros">Nosotros</a>
-            </li>
+    transition: 0.3s;
+}
 
-            <li>
-                <a href="#servicios">Servicios</a>
-            </li>
+.menu a:hover {
+    color: #ffffff;
+}
 
-            <li>
-                <a href="#proyectos">Proyectos</a>
-            </li>
 
-            <li>
-                <a href="#contacto">Contacto</a>
-            </li>
+/* =========================================
+   PORTADA / INICIO
+========================================= */
 
-        </ul>
+.hero {
+    min-height: 100vh;
 
-    </nav>
+    display: flex;
+    align-items: center;
 
+    padding: 120px 8% 80px;
 
-    <!-- =========================
-         INICIO
-    ========================== -->
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        );
+        
+}
 
-    <header class="hero" id="inicio">
+.hero-content {
+    max-width: 850px;
+}
 
-        <div class="hero-content">
+.hero-small {
+    font-size: 14px;
 
-            <div class="hero-small">
-                ORIDEV PERÚ
-            </div>
+    letter-spacing: 4px;
 
-            <h1>
-                Tecnología que<br>
-                <span>conecta.</span>
-            </h1>
+    text-transform: uppercase;
 
-            <p>
-                Desarrollamos soluciones digitales, tecnológicas
-                y de infraestructura para empresas y organizaciones.
-            </p>
+    color: #999999;
 
-            <a href="#servicios" class="button">
-                CONOCE NUESTROS SERVICIOS
-            </a>
+    margin-bottom: 25px;
+}
 
-        </div>
+.hero h1 {
+    font-size: clamp(50px, 8vw, 100px);
 
-    </header>
+    line-height: 1;
 
+    font-weight: 600;
 
-    <!-- =========================
-         NOSOTROS
-    ========================== -->
+    letter-spacing: -3px;
 
-    <section class="about" id="nosotros">
+    margin-bottom: 30px;
+}
 
-        <div class="section-title">
+.hero h1 span {
+    color: #888888;
+}
 
-            <div class="section-number">
-                01 — NOSOTROS
-            </div>
+.hero p {
+    max-width: 650px;
 
-            <h2>
-                ORIDEV PERÚ
-            </h2>
+    font-size: 18px;
 
-            <p>
-                Tecnología que conecta, protege y transforma.
-            </p>
+    color: #cccccc;
 
-        </div>
+    margin-bottom: 40px;
+}
 
 
-        <div class="about-content">
+/* =========================================
+   BOTONES
+========================================= */
 
-            <p>
-                Somos una empresa orientada al desarrollo e
-                implementación de soluciones tecnológicas para
-                empresas y organizaciones.
-            </p>
+.button {
+    display: inline-block;
 
-            <p>
-                Integramos tecnología, infraestructura,
-                conectividad y seguridad para crear soluciones
-                eficientes y adaptadas a las necesidades de
-                nuestros clientes.
-            </p>
+    padding: 15px 30px;
 
-        </div>
+    border: 1px solid #ffffff;
 
-    </section>
+    font-size: 13px;
 
+    font-weight: 600;
 
-    <!-- =========================
-         SERVICIOS
-    ========================== -->
+    letter-spacing: 1px;
 
-    <section class="services" id="servicios">
+    transition: 0.3s;
+}
 
-        <div class="section-title">
+.button:hover {
+    background: #ffffff;
 
-            <div class="section-number">
-                02 — SERVICIOS
-            </div>
+    color: #111111;
+}
 
-            <h2>
-                Soluciones tecnológicas
-            </h2>
 
-            <p>
-                Diseñamos e implementamos soluciones para
-                diferentes necesidades empresariales.
-            </p>
+/* =========================================
+   SECCIONES GENERALES
+========================================= */
 
-        </div>
+section {
+    padding: 120px 8%;
+}
 
+.section-title {
+    margin-bottom: 60px;
+}
 
-        <div class="service-grid">
+.section-number {
+    font-size: 12px;
 
+    color: #777777;
 
-            <div class="service-card">
+    letter-spacing: 3px;
 
-                <h3>
-                    Desarrollo de Software
-                </h3>
+    margin-bottom: 10px;
+}
 
-                <p>
-                    Desarrollo de aplicaciones y plataformas
-                    digitales adaptadas a cada organización.
-                </p>
+.section-title h2 {
+    font-size: 42px;
 
-            </div>
+    font-weight: 500;
+}
 
+.section-title p {
+    max-width: 650px;
 
-            <div class="service-card">
+    margin-top: 15px;
 
-                <h3>
-                    Infraestructura y Redes
-                </h3>
+    color: #999999;
+}
 
-                <p>
-                    Diseño, implementación y optimización de
-                    infraestructura tecnológica y redes.
-                </p>
 
-            </div>
+/* =========================================
+   SERVICIOS
+========================================= */
 
+.services {
+    background: #181818;
+}
 
-            <div class="service-card">
+.service-grid {
+    display: grid;
 
-                <h3>
-                    Ciberseguridad
-                </h3>
+    grid-template-columns: repeat(3, 1fr);
 
-                <p>
-                    Protección de sistemas, redes y datos
-                    mediante soluciones de seguridad.
-                </p>
+    gap: 25px;
+}
 
-            </div>
+.service-card {
+    padding: 40px 30px;
 
+    border: 1px solid #333333;
 
-            <div class="service-card">
+    transition: 0.3s;
+}
 
-                <h3>
-                    Videovigilancia
-                </h3>
+.service-card:hover {
+    transform: translateY(-5px);
 
-                <p>
-                    Sistemas de videovigilancia para empresas,
-                    transporte y organizaciones.
-                </p>
+    border-color: #777777;
+}
 
-            </div>
+.service-card h3 {
+    margin-bottom: 15px;
 
+    font-size: 20px;
 
-            <div class="service-card">
+    font-weight: 500;
+}
 
-                <h3>
-                    Cloud
-                </h3>
+.service-card p {
+    color: #999999;
 
-                <p>
-                    Soluciones de infraestructura y servicios
-                    tecnológicos en la nube.
-                </p>
+    font-size: 14px;
+}
 
-            </div>
 
+/* =========================================
+   PORTAFOLIO
+========================================= */
 
-            <div class="service-card">
+.portfolio {
+    background: #111111;
+}
 
-                <h3>
-                    Conectividad
-                </h3>
+.portfolio-grid {
+    display: grid;
 
-                <p>
-                    Soluciones de conectividad y comunicaciones
-                    para operaciones empresariales.
-                </p>
+    grid-template-columns: repeat(2, 1fr);
 
-            </div>
+    gap: 25px;
+}
 
-        </div>
+.project {
+    height: 300px;
 
-    </section>
+    display: flex;
 
+    align-items: flex-end;
 
-    <!-- =========================
-         PROYECTOS
-    ========================== -->
+    padding: 30px;
 
-    <section class="portfolio" id="proyectos">
+    background: #222222;
 
-        <div class="section-title">
+    border: 1px solid #333333;
 
-            <div class="section-number">
-                03 — PROYECTOS
-            </div>
+    transition: 0.3s;
+}
 
-            <h2>
-                Proyectos destacados
-            </h2>
+.project:hover {
+    background: #292929;
+}
 
-            <p>
-                Conoce algunos de nuestros proyectos y
-                soluciones tecnológicas.
-            </p>
+.project h3 {
+    font-size: 24px;
 
-        </div>
+    font-weight: 500;
+}
 
 
-        <div class="portfolio-grid">
+/* =========================================
+   SOBRE MÍ
+========================================= */
 
+.about {
+    background: #181818;
+}
 
-            <div class="project">
+.about-content {
+    max-width: 800px;
+}
 
-                <h3>
-                    Proyecto 01
-                </h3>
+.about-content p {
+    color: #bbbbbb;
 
-            </div>
+    font-size: 17px;
 
+    margin-bottom: 20px;
+}
 
-            <div class="project">
 
-                <h3>
-                    Proyecto 02
-                </h3>
+/* =========================================
+   CONTACTO
+========================================= */
 
-            </div>
+.contact {
+    background: #111111;
+}
 
+.contact-box {
+    max-width: 800px;
 
-            <div class="project">
+    padding: 50px;
 
-                <h3>
-                    Proyecto 03
-                </h3>
+    border: 1px solid #333333;
+}
 
-            </div>
+.contact-box p {
+    color: #999999;
 
+    margin-bottom: 30px;
+}
 
-            <div class="project">
 
-                <h3>
-                    Proyecto 04
-                </h3>
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
 
-            </div>
+footer {
+    padding: 30px 8%;
 
+    border-top: 1px solid #333333;
 
-        </div>
+    color: #777777;
 
-    </section>
+    font-size: 12px;
 
+    text-align: center;
+}
 
-    <!-- =========================
-         CONTACTO
-    ========================== -->
 
-    <section class="contact" id="contacto">
+/* =========================================
+   DISEÑO PARA CELULARES
+========================================= */
 
-        <div class="section-title">
+@media (max-width: 800px) {
 
-            <div class="section-number">
-                04 — CONTACTO
-            </div>
+    nav {
+        padding: 0 5%;
+    }
 
-            <h2>
-                Hablemos
-            </h2>
+    .menu {
+        gap: 12px;
+    }
 
-            <p>
-                ¿Tienes un proyecto tecnológico?
-                Estamos listos para ayudarte.
-            </p>
+    .menu a {
+        font-size: 10px;
+    }
 
-        </div>
+    section {
+        padding: 90px 6%;
+    }
 
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
 
-        <div class="contact-box">
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
 
-            <p>
-                Ponte en contacto con nosotros para conocer
-                nuestras soluciones y desarrollar tu próximo
-                proyecto.
-            </p>
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
 
-            <a href="mailto:contacto@oridev.pe" class="button">
-                CONTACTARNOS
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        © 2026 ORIDEV PERÚ — Todos los derechos reservados.
-
-    </footer>
-
-
-</body>
-
-</html>
+}
