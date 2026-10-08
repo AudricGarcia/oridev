@@ -1,3 +1,4 @@
+
 /* =========================================
    CONFIGURACIÓN GENERAL
 ========================================= */
@@ -30,7 +31,7 @@ a {
 ========================================= */
 
 nav {
-    position: fixed;
+    position: absolute ;
     top: 0;
     left: 0;
 
@@ -44,22 +45,32 @@ nav {
     padding: 0 7%;
 
     background: rgba(17, 17, 17, 0.95);
+    background-image: url("img/fcabecera.jpg");
+    background-size: cover;
 
     border-bottom: 1px solid #333333;
 
     z-index: 1000;
+    }
+        /* Zona central donde irá la imagen */
+.logo {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 75px;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 2px;
+.logo img {
+    width: 120px;
+    height: 75px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
 }
 
 .menu {
     display: flex;
     gap: 30px;
-
     list-style: none;
 }
 
@@ -67,7 +78,7 @@ nav {
     font-size: 13px;
     font-weight: 500;
 
-    color: #cccccc;
+    color: #666666;
 
     transition: 0.3s;
 }
@@ -94,6 +105,7 @@ nav {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.85)
         );
+        
 }
 
 .hero-content {
