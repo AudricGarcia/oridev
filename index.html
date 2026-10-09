@@ -1,375 +1,827 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ORIDEV PERÚ | Tecnología y Soluciones Digitales</title>
+  <meta name="theme-color" content="#f5fcff">
 
-    <!-- Fuente Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="ORIDEV PERÚ: alquiler y venta de equipos tecnológicos, soporte técnico, desarrollo de software y web a medida, infraestructura, conectividad y ciberseguridad.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>ORIDEV PERÚ | Tecnología que impulsa tu negocio</title>
 
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="style.css">
-    <!--icono-->
-    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.ico"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght\@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon/oridev-symbol.svg">
 
 </head>
 
-
 <body>
 
+  <nav class="site-nav" aria-label="Navegación principal">
 
-    <!-- =========================
-         MENÚ
-    ========================== -->
+    <a class="logo" href="#inicio" aria-label="ORIDEV Perú, inicio">
 
-    <nav>
+      <img src="img/logo.png" alt="ORIDEV PERÚ">
 
-        <div class="logo">
-          <img src="img/log.png" alt="ORIDEV Perú">
-        </div>
+    </a>
 
-        <ul class="menu">
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
 
-            <li>
-                <a href="#inicio">Inicio</a>
-            </li>
+      <span></span><span></span><span></span>
 
-            <li>
-                <a href="#nosotros">Nosotros</a>
-            </li>
+    </button>
 
-            <li>
-                <a href="#servicios">Servicios</a>
-            </li>
+    <ul class="menu" id="main-menu">
 
-            <li>
-                <a href="#proyectos">Proyectos</a>
-            </li>
+      <li><a href="#inicio">Inicio</a></li>
 
-            <li>
-                <a href="#contacto">Contacto</a>
-            </li>
+      <li><a href="#nosotros">Nosotros</a></li>
 
-        </ul>
+      <li><a href="#servicios">Servicios</a></li>
 
-    </nav>
+      <li><a href="#desarrollo">Desarrollo</a></li>
+
+      <li><a href="#soluciones">Soluciones</a></li>
+
+      <li><a href="#contacto">Contacto</a></li>
+
+    </ul>
+
+  </nav>
 
 
-    <!-- =========================
-         INICIO
-    ========================== -->
+
+  <main>
 
     <header class="hero" id="inicio">
 
-        <div class="hero-content">
+      <div class="hero-shade" aria-hidden="true"></div>
 
-            <div class="hero-small">
-                ORIDEV PERÚ
-            </div>
+      <div class="hero-content">
 
-            <h1>
-                Tecnología que<br>
-                <span>conecta.</span>
-            </h1>
+        <p class="eyebrow">ORIDEV PERÚ <span></span> SOLUCIONES TECNOLÓGICAS</p>
 
-            <p>
-                Desarrollamos soluciones digitales, tecnológicas
-                y de infraestructura para empresas y organizaciones.
-            </p>
-
-            <a href="#servicios" class="button">
-                CONOCE NUESTROS SERVICIOS
-            </a>
-
+        <div class="hero-title-wrap">
+          <h1>Tecnología que<br><span>impulsa tu negocio.</span></h1>
+          <h1 class="hero-reflection" aria-hidden="true">Tecnología que<br><span>impulsa tu negocio.</span></h1>
         </div>
+
+        <p class="hero-copy">Integramos tecnología, desarrollo de software, infraestructura y ciberseguridad para responder a las necesidades de empresas y organizaciones.</p>
+
+        <div class="hero-actions">
+
+          <a href="#servicios" class="button button-primary">Conoce nuestros servicios <span class="button-dot" aria-hidden="true"></span></a>
+
+          <!-- <a href="#contacto" class="text-link">Conversemos sobre tu proyecto <span aria-hidden="true">→</span></a>
+
+ -->        </div>
+
+      </div>
+
+
+
+      <div class="hero-carousel" aria-label="Áreas de especialización de ORIDEV">
+
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+
+        <img src="img/slider/videovigilancia.png" alt="Soporte técnico">
+
+        <img src="img/slider/infraestructura.jpg" alt="Infraestructura y servidores">
+
+        <img src="img/slider/desarrollo.jpg" alt="Desarrollo de software">
+
+        <img src="img/slider/ciberseguridad.png" alt="Ciberseguridad y protección digital">
+
+        <div class="carousel-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+      </div>
+
+      <a class="scroll-cue" href="#nosotros"><span></span> Desliza para conocer ORIDEV</a>
 
     </header>
 
 
-    <!-- =========================
-         NOSOTROS
-    ========================== -->
 
-    <section class="about" id="nosotros">
+    <section class="section about-section" id="nosotros">
 
-        <div class="section-title">
+      <div class="section-heading">
 
-            <div class="section-number">
-                01 — NOSOTROS
-            </div>
+        <p class="section-kicker"> NOSOTROS</p>
 
-            <h2>
-                ORIDEV PERÚ
-            </h2>
+        <h2>Un aliado tecnológico<br><span>para tu organización.</span></h2>
 
-            <p>
-                Tecnología que conecta, protege y transforma.
-            </p>
+      </div>
 
-        </div>
+      <div class="about-copy">
 
+        <!-- <p class="lead">Tecnología útil, integrada y pensada para las necesidades reales de cada negocio.</p> -->
 
-        <div class="about-content">
+        <p>En ORIDEV PERÚ brindamos soluciones tecnológicas orientadas a empresas, profesionales y organizaciones. Integramos equipamiento, soporte, desarrollo digital, infraestructura y seguridad para acompañar distintos retos operativos.</p>
 
-            <p>
-                Somos una empresa orientada al desarrollo e
-                implementación de soluciones tecnológicas para
-                empresas y organizaciones.
-            </p>
+        <p>Partimos de cada requerimiento para proponer alternativas funcionales y adaptadas al alcance de cada proyecto.</p>
 
-            <p>
-                Integramos tecnología, infraestructura,
-                conectividad y seguridad para crear soluciones
-                eficientes y adaptadas a las necesidades de
-                nuestros clientes.
-            </p>
+        <a class="inline-link" href="#contacto">Conoce cómo podemos ayudarte <span class="button-dot" aria-hidden="true"></span></a>
 
-        </div>
+      </div>
 
     </section>
 
 
-    <!-- =========================
-         SERVICIOS
-    ========================== -->
 
-    <section class="services" id="servicios">
+    <section class="section services-section" id="servicios">
 
-        <div class="section-title">
+      <div class="section-heading section-heading-centered">
 
-            <div class="section-number">
-                02 — SERVICIOS
-            </div>
+        <p class="section-kicker">SERVICIOS</p>
 
-            <h2>
-                Soluciones tecnológicas
-            </h2>
+        <h2>Soluciones para conectar,<br><span>proteger y hacer crecer.</span></h2>
 
-            <p>
-                Diseñamos e implementamos soluciones para
-                diferentes necesidades empresariales.
-            </p>
+        <p class="section-intro">Un portafolio tecnológico que se adapta a las necesidades de tu operación.</p>
 
-        </div>
+      </div>
+
+      <div class="service-grid">
 
 
-        <div class="service-grid">
+
+  <article class="service-card">
+
+    <div class="service-icon support-icon" aria-hidden="true">
+
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+        <g fill="none" stroke="#14c7e8" stroke-width="5"
+
+           stroke-linecap="round" stroke-linejoin="round">
+
+          <path d="M20 48 V43 A30 30 0 0 1 80 43 V48"/>
+
+          <rect x="15" y="43" width="10" height="23" rx="4"/>
+
+          <rect x="75" y="43" width="10" height="23" rx="4"/>
+
+          <path d="M30 34 H68 V57 H54 L46 64 V57 H30 Z"/>
+
+          <path d="M38 62 H67 V72 H58 L52 78 V72 H38"/>
+
+          <path d="M80 66 V74 A9 9 0 0 1 71 83 H61"/>
+
+          <rect x="53" y="79" width="10" height="8" rx="3"/>
+
+        </g>
+
+      </svg>
+
+    </div>
+
+    <h3>Soporte técnico</h3>
+
+    <p>Diagnóstico, mantenimiento, configuración y asistencia técnica para equipos y entornos de trabajo.</p>
 
 
-            <div class="service-card">
-
-                <h3>
-                    Desarrollo de Software
-                </h3>
-
-                <p>
-                    Desarrollo de aplicaciones y plataformas
-                    digitales adaptadas a cada organización.
-                </p>
-
-            </div>
+    <a class="service-cta" href="#contacto" aria-label="Resuelve tu problema: consultar por soporte técnico">Resuelve tu problema <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
 
 
-            <div class="service-card">
 
-                <h3>
-                    Infraestructura y Redes
-                </h3>
+  <article class="service-card">
 
-                <p>
-                    Diseño, implementación y optimización de
-                    infraestructura tecnológica y redes.
-                </p>
+  <div class="service-icon tech-sale-icon" aria-hidden="true">
 
-            </div>
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
+      <g fill="none"
 
-            <div class="service-card">
+         stroke="#14c7e8"
 
-                <h3>
-                    Ciberseguridad
-                </h3>
+         stroke-width="5"
 
-                <p>
-                    Protección de sistemas, redes y datos
-                    mediante soluciones de seguridad.
-                </p>
+         stroke-linecap="round"
 
-            </div>
+         stroke-linejoin="round">
 
 
-            <div class="service-card">
 
-                <h3>
-                    Videovigilancia
-                </h3>
+        <!-- Bolsa de compra -->
 
-                <p>
-                    Sistemas de videovigilancia para empresas,
-                    transporte y organizaciones.
-                </p>
+        <path d="M39 27 V20 A11 11 0 0 1 61 20 V27"/>
 
-            </div>
+        <path d="M36 27 H64 L68 60 H32 Z"/>
 
 
-            <div class="service-card">
 
-                <h3>
-                    Cloud
-                </h3>
+        <!-- Laptop -->
 
-                <p>
-                    Soluciones de infraestructura y servicios
-                    tecnológicos en la nube.
-                </p>
+        <rect x="19" y="37" width="62" height="43" rx="4"/>
 
-            </div>
+        <path d="M12 84 H88 L82 91 H18 Z"/>
 
 
-            <div class="service-card">
 
-                <h3>
-                    Conectividad
-                </h3>
+        <!-- Símbolo tecnológico -->
 
-                <p>
-                    Soluciones de conectividad y comunicaciones
-                    para operaciones empresariales.
-                </p>
+        <path d="M50 40 L44 47 L50 54 L44 61"/>
 
-            </div>
+        <path d="M34 51 L29 56 L34 61"/>
 
-        </div>
+        <path d="M66 51 L71 56 L66 61"/>
+
+
+
+        <!-- Mano / compra -->
+
+        <path d="M28 69 L44 65 L57 70 L69 67 Q74 67 72 72 L57 79 L43 76 L34 78"/>
+
+      </g>
+
+    </svg>
+
+  </div>
+
+
+
+  <h3>Venta de tecnología</h3>
+
+  <p>Equipos, periféricos y soluciones tecnológicas seleccionadas según los requerimientos del cliente.</p>
+
+
+    <a class="service-cta" href="#contacto" aria-label="Encuentra la tecnología ideal: consultar por venta de tecnología">Encuentra la tecnología ideal <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
+
+
+
+
+
+<article class="service-card">
+
+  <div class="service-icon rental-icon" aria-hidden="true">
+
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+      <g fill="none"
+
+         stroke="#14c7e8"
+
+         stroke-width="4.5"
+
+         stroke-linecap="round"
+
+         stroke-linejoin="round">
+
+
+
+        <!-- Monitor -->
+
+        <rect x="18" y="12" width="64" height="58" rx="3"/>
+
+        <path d="M18 61 H82"/>
+
+
+
+        <!-- Reflejos de pantalla -->
+
+        <path d="M25 22 L34 14"/>
+
+        <path d="M25 32 L43 14"/>
+
+        <path d="M25 42 L53 14"/>
+
+
+
+        <!-- Base del monitor -->
+
+        <path d="M42 70 V77 H58 V70"/>
+
+        <path d="M35 82 H65"/>
+
+
+
+        <!-- Etiqueta RENT -->
+
+        <rect x="48" y="57" width="42" height="22" rx="3" fill="#e3faff"/>
+
+      </g>
+
+
+
+      <text x="69" y="72"
+
+            fill="#14c7e8"
+
+            font-size="10"
+
+            font-family="Montserrat, Arial, sans-serif"
+
+            font-weight="700"
+
+            text-anchor="middle">RENT</text>
+
+    </svg>
+
+  </div>
+
+
+
+  <h3>Alquiler de equipos</h3>
+
+  <p>Computadoras, laptops, impresoras y proyectores para empresas, proyectos, capacitaciones y necesidades temporales.</p>
+
+
+    <a class="service-cta" href="#contacto" aria-label="Equipa tu proyecto hoy: consultar por alquiler de equipos">Equipa tu proyecto hoy <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
+
+
+
+
+
+<article class="service-card">
+
+  <div class="service-icon software-icon" aria-hidden="true">
+
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+      <g fill="none"
+
+         stroke="#14c7e8"
+
+         stroke-width="4.5"
+
+         stroke-linecap="round"
+
+         stroke-linejoin="round">
+
+        <!-- Pantalla de laptop -->
+
+        <rect x="20" y="15" width="60" height="54" rx="3"/>
+
+
+
+        <!-- Símbolo de código -->
+
+        <path d="M39 30 L29 40 L39 50"/>
+
+        <path d="M61 30 L71 40 L61 50"/>
+
+        <path d="M55 27 L45 53"/>
+
+
+
+        <!-- Base de laptop -->
+
+        <path d="M12 77 H88 L82 85 H18 Z"/>
+
+      </g>
+
+    </svg>
+
+  </div>
+
+
+
+  <h3>Desarrollo de software</h3>
+
+  <p>Aplicaciones y sistemas personalizados para optimizar procesos, administrar información y mejorar la productividad.</p>
+
+
+    <a class="service-cta" href="#contacto" aria-label="Hagamos realidad tu idea: consultar por desarrollo de software">Hagamos realidad tu idea <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
+
+
+
+  <article class="service-card">
+
+  <div class="service-icon network-icon" aria-hidden="true">
+
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+      <g fill="none"
+
+         stroke="#14c7e8"
+
+         stroke-width="4"
+
+         stroke-linecap="round"
+
+         stroke-linejoin="round">
+
+
+
+        <!-- Nodo central -->
+
+        <rect x="37" y="35" width="26" height="32" rx="4"/>
+
+        <path d="M44 42 H56 M44 48 H56"/>
+
+        <circle cx="50" cy="59" r="2" fill="#14c7e8"/>
+
+
+
+        <!-- Conexiones -->
+
+        <path d="M43 35 L30 22"/>
+
+        <path d="M50 35 V16"/>
+
+        <path d="M57 35 L72 23"/>
+
+        <path d="M37 48 L18 48"/>
+
+        <path d="M63 48 H82"/>
+
+        <path d="M42 67 L28 81"/>
+
+        <path d="M58 67 L73 81"/>
+
+
+
+        <!-- Nodos -->
+
+        <circle cx="26" cy="18" r="5"/>
+
+        <circle cx="50" cy="10" r="5"/>
+
+        <circle cx="77" cy="18" r="5"/>
+
+        <circle cx="12" cy="48" r="5"/>
+
+        <circle cx="88" cy="48" r="5"/>
+
+        <circle cx="24" cy="85" r="5"/>
+
+        <circle cx="77" cy="85" r="5"/>
+
+
+
+        <!-- Señal inalámbrica -->
+
+        <path d="M70 7 A18 18 0 0 1 91 28"/>
+
+        <path d="M73 15 A10 10 0 0 1 83 25"/>
+
+      </g>
+
+    </svg>
+
+  </div>
+
+
+
+  <h3>Infraestructura y redes</h3>
+
+  <p>Diseño, implementación, configuración y optimización de redes e infraestructura tecnológica empresarial.</p>
+
+
+    <a class="service-cta" href="#contacto" aria-label="Potencia tu conectividad: consultar por infraestructura y redes">Potencia tu conectividad <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
+
+
+
+
+
+<article class="service-card">
+
+  <div class="service-icon surveillance-icon" aria-hidden="true">
+
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+      <g fill="none"
+
+         stroke="#14c7e8"
+
+         stroke-width="4.5"
+
+         stroke-linecap="round"
+
+         stroke-linejoin="round">
+
+
+
+        <!-- Cuerpo de la cámara -->
+
+        <rect x="17" y="35" width="53" height="30" rx="4"
+
+              fill="#e3faff"/>
+
+
+
+        <!-- Visera y lente -->
+
+        <path d="M70 42 H78 Q84 42 84 48 V53 Q84 59 78 59 H70"/>
+
+        <path d="M28 65 V77 Q28 85 20 85 H9"/>
+
+
+
+        <!-- Soporte -->
+
+        <path d="M9 85 H39"/>
+
+
+
+        <!-- Señal inalámbrica -->
+
+        <path d="M72 20 A14 14 0 0 1 86 34"/>
+
+        <path d="M73 10 A24 24 0 0 1 96 33"/>
+
+      </g>
+
+    </svg>
+
+  </div>
+
+
+
+  <h3>Videovigilancia</h3>
+
+  <p>Sistemas de videovigilancia para instalaciones, empresas y transporte, de acuerdo con los requerimientos del proyecto.</p>
+
+
+    <a class="service-cta" href="#contacto" aria-label="Cotiza tu sistema de seguridad: consultar por videovigilancia">Cotiza tu sistema de seguridad <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
+
+
+
+
+
+
+
+<article class="service-card">
+
+  <div class="service-icon cybersecurity-icon" aria-hidden="true">
+
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+      <g fill="none"
+
+         stroke="#14c7e8"
+
+         stroke-width="5"
+
+         stroke-linecap="round"
+
+         stroke-linejoin="round">
+
+
+
+        <!-- Escudo -->
+
+        <path d="M50 10 L82 24 V48 Q82 75 50 90 Q18 75 18 48 V24 Z"/>
+
+
+
+        <!-- Candado -->
+
+        <rect x="35" y="45" width="30" height="24" rx="4"/>
+
+        <path d="M42 45 V37 A8 8 0 0 1 58 37 V45"/>
+
+        <circle cx="50" cy="56" r="2" fill="#14c7e8"/>
+
+        <path d="M50 58 V62"/>
+
+      </g>
+
+    </svg>
+
+  </div>
+
+
+
+  <h3>Ciberseguridad</h3>
+
+  <p>Medidas preventivas y soluciones orientadas a fortalecer la protección de sistemas, redes e información.</p>
+
+
+    <a class="service-cta" href="#contacto" aria-label="Protege tu empresa digital: consultar por ciberseguridad">Protege tu empresa digital <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
+
+
+
+
+
+
+
+<article class="service-card">
+
+  <div class="service-icon cloud-icon" aria-hidden="true">
+
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+      <g fill="none"
+
+         stroke="#14c7e8"
+
+         stroke-width="4.5"
+
+         stroke-linecap="round"
+
+         stroke-linejoin="round">
+
+
+
+        <!-- Nube -->
+
+        <path d="M25 55
+
+                 A17 17 0 0 1 29 22
+
+                 A23 23 0 0 1 70 28
+
+                 A16 16 0 0 1 77 58"/>
+
+
+
+        <!-- Engranaje -->
+
+        <circle cx="50" cy="58" r="14"/>
+
+        <circle cx="50" cy="58" r="6"/>
+
+
+
+        <path d="M50 38 V44
+
+                 M50 72 V78
+
+                 M30 58 H36
+
+                 M64 58 H70
+
+                 M36 44 L40 48
+
+                 M60 68 L64 72
+
+                 M64 44 L60 48
+
+                 M40 68 L36 72"/>
+
+      </g>
+
+    </svg>
+
+  </div>
+
+
+
+  <h3>Cloud y conectividad</h3>
+
+  <p>Servicios en la nube, conectividad y comunicaciones para apoyar la continuidad de las operaciones.</p>
+
+
+    <a class="service-cta" href="#contacto" aria-label="Lleva tu empresa más lejos: consultar por cloud y conectividad">Lleva tu empresa más lejos <span class="button-dot" aria-hidden="true"></span></a>
+  </article>
+
+
+
+
+
+</div>
 
     </section>
 
 
-    <!-- =========================
-         PROYECTOS
-    ========================== -->
 
-    <section class="portfolio" id="proyectos">
+    <section class="section development-section" id="desarrollo">
 
-        <div class="section-title">
+      <div class="development-visual" aria-hidden="true">
+        <img class="development-image" src="img/desarrollo-ai-dashboard.png" alt="">
 
-            <div class="section-number">
-                03 — PROYECTOS
-            </div>
+      </div>
 
-            <h2>
-                Proyectos destacados
-            </h2>
+      <div class="development-copy">
 
-            <p>
-                Conoce algunos de nuestros proyectos y
-                soluciones tecnológicas.
-            </p>
+        <p class="section-kicker">DESARROLLO DIGITAL</p>
 
-        </div>
+        <h2>Tu operación.<br><span>Tus procesos. Tu software.</span></h2>
 
+        <p class="lead">Creamos herramientas digitales alineadas con la forma en que trabaja tu organización.</p>
 
-        <div class="portfolio-grid">
+        <div class="development-list">
 
+          <article><span>01</span><div><h3>Software empresarial</h3><p>Sistemas internos, automatización de tareas y herramientas de gestión.</p></div></article>
 
-            <div class="project">
+          <article><span>02</span><div><h3>Desarrollo web a medida</h3><p>Webs corporativas, portales y plataformas adaptadas a tus objetivos.</p></div></article>
 
-                <h3>
-                    Proyecto 01
-                </h3>
-
-            </div>
-
-
-            <div class="project">
-
-                <h3>
-                    Proyecto 02
-                </h3>
-
-            </div>
-
-
-            <div class="project">
-
-                <h3>
-                    Proyecto 03
-                </h3>
-
-            </div>
-
-
-            <div class="project">
-
-                <h3>
-                    Proyecto 04
-                </h3>
-
-            </div>
-
+          <article><span>03</span><div><h3>Plataformas digitales</h3><p>Paneles administrativos y funcionalidades diseñadas para cada proyecto.</p></div></article>
 
         </div>
+
+        <a class="button button-primary" href="#contacto">Cuéntanos tu idea <span class="button-dot" aria-hidden="true"></span></a>
+
+      </div>
 
     </section>
 
 
-    <!-- =========================
-         CONTACTO
-    ========================== -->
 
-    <section class="contact" id="contacto">
+    <section class="section solutions-section" id="soluciones">
 
-        <div class="section-title">
+      <div class="section-heading">
 
-            <div class="section-number">
-                04 — CONTACTO
-            </div>
+        <p class="section-kicker">ÁREAS DE SOLUCIÓN</p>
 
-            <h2>
-                Hablemos
-            </h2>
+        <h2>Tecnología aplicada<br><span>a tu operación.</span></h2>
 
-            <p>
-                ¿Tienes un proyecto tecnológico?
-                Estamos listos para ayudarte.
-            </p>
+        <p class="section-intro">Integramos capacidades tecnológicas para responder a diferentes escenarios empresariales.</p>
 
-        </div>
+      </div>
 
+      <div class="solutions-grid">
 
-        <div class="contact-box">
+        <article class="solution-tile tile-equipment"><span>01 / EQUIPAMIENTO</span><h3>Herramientas para trabajar mejor.</h3><p>Equipos y soporte para el día a día.</p></article>
 
-            <p>
-                Ponte en contacto con nosotros para conocer
-                nuestras soluciones y desarrollar tu próximo
-                proyecto.
-            </p>
+        <article class="solution-tile tile-digital"><span>02 / TRANSFORMACIÓN DIGITAL</span><h3>Procesos más conectados.</h3><p>Software y plataformas para tu organización.</p></article>
 
-            <a href="mailto:contacto@oridevperu.pe" class="button">
-                CONTACTANOSSA
-            </a>
+        <article class="solution-tile tile-infra"><span>03 / INFRAESTRUCTURA</span><h3>Una base tecnológica confiable.</h3><p>Redes, conectividad y servicios integrados.</p></article>
 
-        </div>
+        <article class="solution-tile tile-security"><span>04 / SEGURIDAD</span><h3>Protección desde el diseño.</h3><p>Prevención y seguridad digital.</p></article>
+
+      </div>
 
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
 
-    <footer>
+    <section class="section process-section">
 
-        © 2026 ORIDEV PERÚ — Todos los derechos reservados.
+      <div class="section-heading section-heading-centered">
 
-    </footer>
+        <p class="section-kicker">NUESTRO ENFOQUE</p>
+
+        <h2>De la necesidad<br><span>a la solución.</span></h2>
+
+        <p class="section-intro">Un proceso claro para definir el alcance y acompañar cada requerimiento.</p>
+
+      </div>
+
+      <div class="process-grid">
+
+        <article><span>01</span><h3>Diagnóstico</h3><p>Comprendemos la necesidad, el contexto y los objetivos.</p></article>
+
+        <article><span>02</span><h3>Propuesta</h3><p>Definimos el alcance y la alternativa tecnológica adecuada.</p></article>
+
+        <article><span>03</span><h3>Implementación</h3><p>Desarrollamos o configuramos la solución acordada.</p></article>
+
+        <article><span>04</span><h3>Acompañamiento</h3><p>Coordinamos el soporte según el servicio contratado.</p></article>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="contact-section" id="contacto">
+
+      <div class="contact-orb orb-one" aria-hidden="true"></div><div class="contact-orb orb-two" aria-hidden="true"></div>
+
+      <div class="contact-inner">
+
+        <p class="section-kicker">CONTACTO</p>
+
+        <h2>La próxima solución<br><span>empieza con una conversación.</span></h2>
+
+        <p>Cuéntanos qué necesita tu organización. Podemos conversar sobre equipos, soporte, desarrollo digital, infraestructura o seguridad tecnológica.</p>
+
+        <a class="button button-light" href="mailto:contacto\@oridevperu.pe?subject=Consulta%20comercial%20-%20ORIDEV%20PER%C3%9A">Contactar a ORIDEV <span class="button-dot" aria-hidden="true"></span></a>
+
+        <p class="contact-email"><a href="mailto:contacto\@oridevperu.pe">contacto\@oridevperu.pe</a></p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <footer class="site-footer">
+
+    <a class="footer-brand" href="#inicio">ORIDEV <span>PERÚ</span></a>
+
+    <p>Soluciones tecnológicas para empresas y organizaciones.</p>
+
+    <div class="footer-links"><a href="#servicios">Servicios</a><a href="#desarrollo">Desarrollo</a><a href="#contacto">Contacto</a></div>
+
+    <div class="footer-bottom"><span>© <span id="year">2026</span> ORIDEV PERÚ. Todos los derechos reservados.</span><a href="#inicio">Volver arriba <span class="button-dot" aria-hidden="true"></span></a></div>
+
+  </footer>
+
+<script src="js/main.js" defer></script>
+
 
 
 </body>
