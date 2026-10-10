@@ -74,7 +74,7 @@
 
         <div class="hero-title-wrap">
           <h1>Tecnología que<br><span>impulsa tu negocio.</span></h1>
-          <h1 class="hero-reflection" aria-hidden="true">Tecnología que<br><span>impulsa tu negocio.</span></h1>
+          <h1 class="hero-title-glow" aria-hidden="true">Tecnología que<br><span>impulsa tu negocio.</span></h1>
         </div>
 
         <p class="hero-copy">Integramos tecnología, desarrollo de software, infraestructura y ciberseguridad para responder a las necesidades de empresas y organizaciones.</p>
@@ -109,7 +109,7 @@
 
       </div>
 
-      <a class="scroll-cue" href="#nosotros"><span></span> Desliza para conocer ORIDEV</a>
+      <a class="scroll-cue" href="#nosotros">Desliza para conocer ORIDEV <span class="scroll-indicator" aria-hidden="true"></span></a>
 
     </header>
 
@@ -192,7 +192,7 @@
     <p>Diagnóstico, mantenimiento, configuración y asistencia técnica para equipos y entornos de trabajo.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Resuelve tu problema: consultar por soporte técnico">Resuelve tu problema <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="soporte" aria-label="Resuelve tu problema: consultar por soporte técnico">Resuelve tu problema <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -258,7 +258,7 @@
   <p>Equipos, periféricos y soluciones tecnológicas seleccionadas según los requerimientos del cliente.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Encuentra la tecnología ideal: consultar por venta de tecnología">Encuentra la tecnología ideal <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="venta" aria-label="Encuentra la tecnología ideal: consultar por venta de tecnología">Encuentra la tecnología ideal <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -340,7 +340,7 @@
   <p>Computadoras, laptops, impresoras y proyectores para empresas, proyectos, capacitaciones y necesidades temporales.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Equipa tu proyecto hoy: consultar por alquiler de equipos">Equipa tu proyecto hoy <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="alquiler" aria-label="Equipa tu proyecto hoy: consultar por alquiler de equipos">Equipa tu proyecto hoy <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -396,7 +396,7 @@
   <p>Aplicaciones y sistemas personalizados para optimizar procesos, administrar información y mejorar la productividad.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Hagamos realidad tu idea: consultar por desarrollo de software">Hagamos realidad tu idea <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="desarrollo" aria-label="Hagamos realidad tu idea: consultar por desarrollo de software">Hagamos realidad tu idea <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -484,7 +484,7 @@
   <p>Diseño, implementación, configuración y optimización de redes e infraestructura tecnológica empresarial.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Potencia tu conectividad: consultar por infraestructura y redes">Potencia tu conectividad <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="infraestructura" aria-label="Potencia tu conectividad: consultar por infraestructura y redes">Potencia tu conectividad <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -550,7 +550,7 @@
   <p>Sistemas de videovigilancia para instalaciones, empresas y transporte, de acuerdo con los requerimientos del proyecto.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Cotiza tu sistema de seguridad: consultar por videovigilancia">Cotiza tu sistema de seguridad <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="videovigilancia" aria-label="Cotiza tu sistema de seguridad: consultar por videovigilancia">Cotiza tu sistema de seguridad <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -606,7 +606,7 @@
   <p>Medidas preventivas y soluciones orientadas a fortalecer la protección de sistemas, redes e información.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Protege tu empresa digital: consultar por ciberseguridad">Protege tu empresa digital <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="ciberseguridad" aria-label="Protege tu empresa digital: consultar por ciberseguridad">Protege tu empresa digital <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -682,7 +682,7 @@
   <p>Servicios en la nube, conectividad y comunicaciones para apoyar la continuidad de las operaciones.</p>
 
 
-    <a class="service-cta" href="#contacto" aria-label="Lleva tu empresa más lejos: consultar por cloud y conectividad">Lleva tu empresa más lejos <span class="button-dot" aria-hidden="true"></span></a>
+    <a class="service-cta" href="#service-inquiry-modal" data-open-service-modal data-service="cloud" aria-label="Lleva tu empresa más lejos: consultar por cloud y conectividad">Lleva tu empresa más lejos <span class="button-dot" aria-hidden="true"></span></a>
   </article>
 
 
@@ -806,6 +806,27 @@
 
   </main>
 
+  <dialog class="service-inquiry-modal" id="service-inquiry-modal" aria-labelledby="service-inquiry-title" aria-describedby="service-inquiry-description">
+    <div class="service-inquiry-card">
+      <button class="service-inquiry-close" type="button" aria-label="Cerrar formulario">×</button>
+      <p class="section-kicker" id="service-inquiry-kicker">CONSULTA SIN COMPROMISO</p>
+      <h2 id="service-inquiry-title">Cuéntanos qué necesitas</h2>
+      <p id="service-inquiry-description" class="service-inquiry-description">Elige una opción y cuéntanos un poco más para orientarte mejor por WhatsApp.</p>
+      <form id="service-inquiry-form">
+        <label for="service-inquiry-name">Tu nombre o el de tu empresa</label>
+        <input id="service-inquiry-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+        <label for="service-inquiry-topic" id="service-inquiry-topic-label">¿Qué necesitas?</label>
+        <select id="service-inquiry-topic" name="topic" required>
+          <option value="" selected disabled>Elige una opción</option>
+        </select>
+        <label for="service-inquiry-request">¿Qué necesitas o qué está pasando? Cuéntanos con tus palabras</label>
+        <textarea id="service-inquiry-request" name="request" rows="4" maxlength="1200" placeholder="Agrega los detalles que te parezcan importantes. Si elegiste «Otro», descríbelo aquí. Comparte solo lo que te resulte cómodo." required></textarea>
+        <button class="button service-inquiry-submit" type="submit">Continuar a WhatsApp <span class="button-dot" aria-hidden="true"></span></button>
+      </form>
+      <p class="service-inquiry-note">WhatsApp se abrirá con tu mensaje listo para enviar.</p>
+    </div>
+  </dialog>
+
 
 
   <footer class="site-footer">
@@ -816,7 +837,8 @@
 
     <div class="footer-links"><a href="#servicios">Servicios</a><a href="#desarrollo">Desarrollo</a><a href="#contacto">Contacto</a></div>
 
-    <div class="footer-bottom"><span>© <span id="year">2026</span> ORIDEV PERÚ. Todos los derechos reservados.</span><a href="#inicio">Volver arriba <span class="button-dot" aria-hidden="true"></span></a></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> ORIDEV PERÚ. Todos los derechos reservados.</span>
+      <a class="footer-back-top" href="#inicio"><span class="scroll-indicator" aria-hidden="true"></span>Volver arriba</a></div>
 
   </footer>
 
@@ -827,3 +849,7 @@
 </body>
 
 </html>
+
+
+
+
